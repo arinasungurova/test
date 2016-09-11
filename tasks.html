@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tasks</title>
+	<link href="common.css" rel="stylesheet">
+	<link href="tasks.css" rel="stylesheet">
+</head>
+<body>
+	<div class="tasks">
+		<ul class="main-menu clearfix">
+			<li class="main-menu__item"><a href="projects.html" class="main-menu__item__link">Проекты</a></li>
+			<li class="main-menu__item"><a href="tasks.html" class="main-menu__item__link main-menu__item__link_active">Задачи</a></li>
+		</ul>
+		<section class="content">
+			<p class="content__title content-title">Задачи<span class="content__title__project-name">в проекте <a href="projects.html" class="content__title__project-name__link link-underlined">проект 1</a></span></p>
+			<article class="tasks-table table">
+				<ul class="tasks-table__row table-row">
+					<li class="tasks-table__tasks-drag table-cell"></li>
+					<li class="tasks-table__tasks-id table-cell"><a href="" class="tasks-table__tasks-id__link link-underlined">PRG-2</a></li>
+					<li class="tasks-table__tasks-status table-cell"><div class="tasks-table__tasks-status__container tasks-table__tasks-status__container_new">new</div></li>
+					<li class="tasks-table__tasks-name table-cell">Задача 1</li>
+					<li class="tasks-table__tasks-description table-cell">небольшая часть описан...</li>
+					<li class="tasks-table__tasks-more table-cell"><a href="" class="tasks-table__tasks-more__link link-arrow">подробнее</a></li>
+				</ul>
+				<ul class="tasks-table__row table-row">
+					<li class="tasks-table__tasks-drag table-cell"></li>
+					<li class="tasks-table__tasks-id table-cell"><a href="" class="tasks-table__tasks-id__link link-underlined">PRG-1</a></li>
+					<li class="tasks-table__tasks-status table-cell"><div class="tasks-table__tasks-status__container tasks-table__tasks-status__container_working">working</div></li>
+					<li class="tasks-table__tasks-name table-cell">Задача 2</li>
+					<li class="tasks-table__tasks-description table-cell">небольшая часть описан...</li>
+					<li class="tasks-table__tasks-more table-cell"><a href="" class="tasks-table__tasks-more__link link-arrow">подробнее</a></li>
+				</ul>
+			</article>
+			<button class="button content__button" onclick="show('block')">+ добавить</button>
+		</section>
+	</div>
+	<div class="shade" onclick="show('none')"></div>
+	<form class="task-popup popup">
+		<div class="task-popup__header">
+			<h1 class="task-popup__title popup-title">Новая задача</h1>
+			<button class="task-popup__closing-button popup-closing-button" onclick="show('none')">&times</button>
+		</div>
+		<div class="task-popup__body">
+			<label for="task-popup__task-title" class="popup-label">Название:</label>
+			<input type="text" name="task-popup__task-title" class="task-popup__task-title popup-input-field" required>
+			<label for="task-popup__task-status" class="popup-label">Статус:</label>
+			<select name="task-popup__task-status" class="task-popup__task-status popup-input-field popup-input-field_half-width" required>
+				<option>новая</option>
+			</select>
+			<label for="task-popup__task-type" class="popup-label">Тип задачи:</label>
+			<select name="task-popup__task-type" class="task-popup__task-type popup-input-field popup-input-field_half-width" required>
+				<option>улучшение</option>
+			</select>
+			<label for="task-popup__task-description" class="popup-label">Описание:</label>
+			<textarea type="text" name="task-popup__task-description" class="task-popup__task-description popup-input-field" rows="4"></textarea>
+		</div>
+		<div class="project-popup__footer">
+			<button class="button popup__button" onclick="show('none')">Создать</button>
+		</div>
+	</form>
+	<script src="common.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Projects</title>
+	<link href="common.css" rel="stylesheet">
+	<link href="projects.css" rel="stylesheet">
+</head>
+<body>
+	<div class="projects">
+		<ul class="main-menu clearfix">
+			<li class="main-menu__item"><a href="projects.html" class="main-menu__item__link main-menu__item__link_active">Проекты</a></li>
+			<li class="main-menu__item"><a href="tasks.html" class="main-menu__item__link">Задачи</a></li>
+		</ul>
+		<section class="content">
+			<p class="content__title">Проекты</p>
+			<article class="project-table table">
+				<ul class="project-table__row table-row">
+					<li class="project-table__project-title table-cell"><a href="tasks.html" class="project-table__project-title__link link-underlined">Проект 1</a></li>
+					<li class="project-table__project-key table-cell">PRG</li>
+					<li class="project-table__project-tasks table-cell"><a href="tasks.html" class="project-table__project-tasks__link link-arrow">Задачи</a></li>
+				</ul>
+				<ul class="project-table__row table-row">
+					<li class="project-table__project-title table-cell"><a href="tasks.html" class="project-table__project-title__link link-underlined">Проект 2</a></li>
+					<li class="project-table__project-key table-cell">TST</li>
+					<li class="project-table__project-tasks table-cell"><a href="tasks.html" class="project-table__project-tasks__link link-arrow">Задачи</a></li>
+				</ul>
+			</article>
+			<button class="button content__button" onclick="show('block')">+ добавить</button>
+		</section>
+	</div>
+	<div class="shade" onclick="show('none')"></div>
+	<form class="project-popup popup">
+		<div class="project-popup__header">
+			<h1 class="project-popup__title popup-title">Новый проект</h1>
+			<button class="project-popup__closing-button popup-closing-button" onclick="show('none')">&times</button>
+		</div>
+		<div class="project-popup__body">
+			<label for="project-popup__project-title" class="popup-label">Название:</label>
+			<input type="text" name="project-popup__project-title" class="project-popup__project-title popup-input-field" required>
+			<label for="project-popup__project-key" class="popup-label">Ключ:</label>
+			<input type="text" name="project-popup__project-key" class="project-popup__project-key popup-input-field" required>
+		</div>
+		<div class="project-popup__footer">
+			<button class="button popup__button" onclick="show('none')">Создать</button>
+		</div>
+	</form>
+	<script src="common.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+.projects {
+	width: 100%;
+	min-width: 720px;
+	min-height: 250px;
+}
+
+.project-table__project-title {
+	width: 30%;
+}
+
+.project-table__project-key {
+	width: 40%;
+	font-weight: bold;
+}
+
+.project-table__project-tasks {
+	width: 30%;
+}
+
+.project-popup {
+	height: 220px;
+}

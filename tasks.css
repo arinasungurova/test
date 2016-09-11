@@ -1,0 +1,67 @@
+.tasks {
+	width: 100%;
+	min-width: 1200px;
+	min-height: 250px;
+}
+
+.content__title__project-name {
+	font-size: 14px;
+	font-weight: normal;
+	vertical-align: middle;
+	padding-left: 10px;
+}
+
+.tasks-table__tasks-drag {
+	width: 5%;
+}
+
+.tasks-table__tasks-id {
+	width: 10%;
+}
+
+.tasks-table__tasks-status {
+	width: 10%;
+}
+
+.tasks-table__tasks-name {
+	width: 13%;
+	font-weight: bold;
+}
+
+.tasks-table__tasks-description {
+	width: 35%;
+}
+
+.tasks-table__tasks-more {
+	width: 30%;
+}
+
+.tasks-table__tasks-status__container {
+	vertical-align: middle;
+    padding: 5px 15px;
+	text-align: center;
+	width: 50px;
+	border-radius: 5px;
+}
+
+.tasks-table__tasks-status__container_new {
+	background-color: #94e8fd;
+}
+
+.tasks-table__tasks-status__container_working {
+	background-color: #fd8653;
+}
+
+.tasks-table__tasks-drag::before {
+	content: "≡";
+	font: 2em "arial";
+}
+
+.task-popup__task-description {
+	width: 99%;
+	resize: none;
+}
+
+.task-popup {
+	height: 400px;
+}
